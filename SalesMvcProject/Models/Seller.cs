@@ -5,10 +5,12 @@ using System.Threading.Tasks;
 
 namespace SalesMvcProject.Models
 {
-    public class Department
+    public class Seller
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public ICollection<Seller> Sellers { get; set; } = new List<Seller>();
+        public string Email { get; set; }
+        public DateTime BirthDate { get; set; }
+        public double BaseSalary { get; set; }
     }
 }
