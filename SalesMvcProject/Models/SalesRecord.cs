@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using SalesMvcProject.Models.Enums;
 
 namespace SalesMvcProject.Models
@@ -11,6 +8,17 @@ namespace SalesMvcProject.Models
         public int Id { get; set; }
         public DateTime Date { get; set; }
         public double Amount { get; set; }
-        public eSalesStatus MyProperty { get; set; }
+        public eSalesStatus Status { get; set; }
+
+        public SalesRecord()
+        {
+        }
+        public SalesRecord(int id, DateTime date, double amount, eSalesStatus status)
+        {
+            Id = id;
+            Date = date;
+            Amount = amount;
+            Status = status;
+        }
     }
 }
