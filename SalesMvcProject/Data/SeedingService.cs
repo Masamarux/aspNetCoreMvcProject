@@ -9,7 +9,6 @@ namespace SalesMvcProject.Data
 {
     public class SeedingService
     {
-        private const double V = .00;
         private SalesMvcProjectContext _context;
 
         public SeedingService(SalesMvcProjectContext context)
